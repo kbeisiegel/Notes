@@ -1,0 +1,7 @@
+Description lists use <dl> tags, inside each list contains description terms <dt>
+as well as description definitions <dd>.
+
+<dl>
+  <dt>..</dt>
+  <dd>..</dd>
+</dl>

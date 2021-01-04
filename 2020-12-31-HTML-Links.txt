@@ -1,0 +1,56 @@
+HTML links require <a> element as well as the href (hypertext reference) attribute.
+
+<p>I'm creating a link to
+<a href="https://www.apple.com/">the Apple website</a>.
+</p>
+
+Adding additional information about the link with title attribute. Can be
+seen with mouse hover.
+
+<p>I'm creating a link to
+<a href="https://www.apple.com/"
+   title="Apple's home product page">the Apple website</a>.
+
+Block-level links (making an image into link)
+
+<a href="https://www.mozilla.org/en-US/">
+  <img src="mozilla-image.png" alt="mozilla logo that links to the mozilla homepage">
+</a>
+
+To link to a specific part of the document, an id attribute must be assigned
+(Document fragments) It is linked with #
+
+<h2 id="Mailing_address">Mailing address</h2>
+
+<p>Want to write us a letter? Use our <a href="contacts.html#Mailing_address">Mailing address</a>.</p>
+or
+<p>The <a href="#Mailing_address">company mailing address</a> can be found at the bottom of this page.</p>
+
+Links to non-HTML resources
+
+<p><a href="https://www.example.com/large-report.pdf">
+  Download the sales report (PDF, 10MB)
+</a></p>
+
+<p><a href="https://www.example.com/video-stream/" target="_blank">
+  Watch the video (stream opens in a separate tab, HD quality)
+</a></p>
+
+<p><a href="https://www.example.com/car-game/">
+  Play the car game (requires Flash)
+</a></p>
+
+Download links must include download attribute
+
+<a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+   download="firefox-latest-64bit-installer.exe">
+  Download Latest Firefox for Windows (64-bit) (English, US)
+</a>
+
+Email links
+
+<a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+
+Adding subject, cc and body
+
+<a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
