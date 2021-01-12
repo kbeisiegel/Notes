@@ -1,0 +1,69 @@
+Embedding images in html requires <img> tags as well as the src attribute
+
+<img src="dinosaur.jpg">
+
+<img src="images/dinosaur.jpg">
+
+<img src="https://www.example.com/images/dinosaur.jpg">
+
+Alternative text is used as a description of the embedded media
+
+<img src="images/dinosaur.jpg"
+     alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth">
+
+<img src="images/dinosaur.jpg"
+     alt="The head and torso of a dinosaur skeleton;
+          it has a large head with long sharp teeth"
+     width="400"
+     height="341"
+     title="A T-Rex on display in the Manchester University Museum">
+
+<figure> and <figcaption> tags provide containers for figures
+
+<figure>
+<img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"
+     alt="The head and torso of a dinossaur skeleton;
+          it has a large head with long sharp teeth"
+     width="400"
+     height="341">
+     <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+</figure>
+
+CSS can also be used to embed images into webpages using background-image element
+
+p {
+  background-image: url("images/dinosaur.jpg");
+}
+
+If an image has meaning use HTML images, if it is purely decoration use CSS images.
+
+Embedding PDFs and 3rd party multimedia
+
+<iframe src="https://developer.mozilla.org/eng-US/docs/Glossary"
+        width="100%" height="500" frameborder="0"
+        allowfullscreen sandbox>
+  <p>
+    <a href="/en-US/docs/Glossary">
+       Fallback link for browsers that don't support iframes
+    </a>
+  </p>
+</iframe>
+
+Using <embed> element to embed Flash
+
+<embed src="whoosh.swf" quality="medium"
+       bgcolor="#ffffff" width="550" height="400"
+       name="Whoosh" align="middle" allowScriptAccess="sameDomain"
+       allowFullScreen="false" type="application/x-shockwave-flash"
+       pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+Using <object> element to embed PDF
+
+<object data="mypdf.pdf" type="application/pdf"
+        width="800" height="1200" typemustmatch>
+  <p>You don't have a PDF plugin, but you can
+    <a href="mypdf.pdf">download the PDF file.
+    </a>
+  </p>
+</object>

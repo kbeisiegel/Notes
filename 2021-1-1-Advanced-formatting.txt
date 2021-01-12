@@ -5,3 +5,25 @@ as well as description definitions <dd>.
   <dt>..</dt>
   <dd>..</dd>
 </dl>
+
+Blockquotes contain <blockquote...</blockquote> elements with a <cite> tag inside the blockquote element.
+
+<blockquote cite="...">
+  <p>...</p>
+</blockquote>
+
+Inline quotes are the same way, except <q> elements are used instead of blockquote.
+
+<p>...<q cite="...">...</q> <a href="..."><cite>...</cite></a></p>
+
+Abbreviations are used with the <abbr> tag with a title attribute.
+
+<p><abbr title="National Basketball Association">NBA</abbr></p>
+
+Superscript and subscript will be used with <sup> and <sub> elements.
+
+<p>My birthday is on the 28<sup>th</sup> of June 1996.</p>
+<p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+<p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+
+<time datetime="2021-01-05">5 January 2021</time>
