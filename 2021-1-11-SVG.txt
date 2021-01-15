@@ -28,3 +28,43 @@ Embedding SVG with <iframe>
 <iframe src="triangle.svg" width="500" height="500" sandbox>
     <img src="triangle.png" alt="Triangle with three unequal sides" />
 </iframe>
+
+Responsive images are implemented to resolve issues of resolution due to various devices screen sizes
+
+<img src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+
+<img srcset="elva-fairy-480w.jpg 480w,
+             elva-fairy-800w.jpg 800w"
+     sizes="(max-width: 600px) 480px,
+            800px"
+     src="elva-fairy-800w.jpg"
+     alt="Elva dressed as a fairy">
+
+srcset defines set of images to allow the browser to pick
+sizes defines set of media conditions and indicates which is best
+
+Resolution switching involves same screen size with different resolution
+
+<img srcset="elva-fairy-320w.jpg,
+             elva-fairy-480w.jpg 1.5x,
+             elva-fairy-640w.jpg 2x"
+     src="elva-fairy-640w.jpg"
+     alt="Elva dressed as a fairy">
+
+Art direction involves changing the image displayed to suit different image display sizes
+
+<img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg"
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+</picture>
+
+Maintaining low file sizes and high quality image formats
+
+<picture>
+  <source type="image/svg+xml" srcset="pyramid.svg">
+  <source type="image/webp" srcset="pyramid.webp">
+  <img src="pyramid.png" alt="regular pyramid built from four equilateral triangles">
+</picture>
