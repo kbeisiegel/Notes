@@ -1,0 +1,61 @@
+CSS styling using currentcolor keyword
+
+<div style="color:blue; border: 1px dashed currentcolor;">
+  The color of this text is blue.
+    <div style="background:currentcolor; height:9px;"></div>
+    This block is surrounded by a blue border.
+    </div>
+
+Descendant combinator to style things based on location
+(<em> element within <li>)
+li em {
+  color: rebeccapurple;
+}
+
+Adjacent sibling combinator
+(<p> after heading)
+h1 + p {
+  font-size: 200%;
+}
+
+Styling links target <a> (anchor) element
+
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* selects any <span> that is inside a <p>, which is inside an <article> */
+article p span { ... }
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after a <h1> */
+h1 + ul + p { ... }
+
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+
+Linking the CSS file
+<!-- Inside a subdirectory called styles inside the current directory -->
+<link rel="stylesheet" href="styles/style.css">
+
+<!-- Inside a subdirectory called general, which is in a subdirectory called styles, inside the current directory -->
+<link rel="stylesheet" href="styles/general/style.css">
+
+<!-- Go up one directory level, then inside a subdirectory called styles -->
+<link rel="stylesheet" href="../styles/style.css">
+
+Using <style> element within the HTML <head> would result in an internal stylesheet
+
+inherit is a value that takes from a previous value
+initial is a value that resets the property to its initial value
+unset is a value that that resets the property to its natural value
