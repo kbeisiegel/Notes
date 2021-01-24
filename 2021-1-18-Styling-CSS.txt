@@ -59,3 +59,13 @@ Using <style> element within the HTML <head> would result in an internal stylesh
 inherit is a value that takes from a previous value
 initial is a value that resets the property to its initial value
 unset is a value that that resets the property to its natural value
+
+The higher specificity of rule/selector, the higher the priority
+
+h1 { } (targets element)
+
+.box { } (targets class)
+
+#unique { } (targets specific ID)
+
+* is the universal selector
