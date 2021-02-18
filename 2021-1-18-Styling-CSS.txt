@@ -69,3 +69,28 @@ h1 { } (targets element)
 #unique { } (targets specific ID)
 
 * is the universal selector
+
+h1 + p (+ is the adjacent sibling combinator, so the first <p> after h1 would be selected)
+
+h1 ~ p (~ is the general sibling combinator)
+
+Attribute selectors
+
+a[title], a[href="https:://website.com"] are generic, the first is less specific
+
+p[class~="special"] will match a specific or general attribute value
+~=
+
+div[lang|="zh"] will match exact value or begin with value
+|=
+
+li[class^="box-"] is going to match attribute value and will begin with value
+li[class$="-box"] is going to match attribute value and will end with value
+li[class*="box"] is going to match attribute value anywhere it appears
+
+adding i flag will match characters case-insensitively
+
+pseudo-class has one colon :
+pseudo-element has double colon :: (i.e article p:first-child::first-line)
+
+content: "This will show up before HTML content"
