@@ -1,0 +1,37 @@
+let myVariable = document.querySelector('h1');
+alert('hello!');
+
+document.querySelector and alert are functions built into the browser
+Functions take arguments (which go inside the parentheses)
+
+.exit will exit the NODE REPL (or ctrl + c) REPL = read, eval, print, loop
+.load ./file.js will log contents of said file
+
+var, let, const declare variables
+console.log() will log params in parentheses to console
+`${}` is used for string interpolation // notice backticks
+typeof operator is used to check the value to the right and returns the data type
+
+conditional statements
+if ... else if ... else ...
+=== equals, && and, || or, !not
+false values: 0, ""or'', null, undefined, NaN
+Ternary operators can be used to perform the same functionality
+isLocked ? console.log(...) : ....;
+Two expressions follow the ? and are seperated with :
+If condition evaluates to true, the first expression executes
+If condition evaluates to false, the second expression executes
+switch (...) {case ... : ... break; default: ... break;}
+
+The function keyword declares the name followed by parentheses and body
+function greetWorld() {}
+calling a function is simply greetWorld()
+Any function with input or parameters can be treated like a variable within function
+Parameters can be set to default values to be predetermined function greeting(name = 'stranger')
+Return statements are used to pass back information from function
+When return is used, the execution of that function is stopped and won't continue
+
+Function expressions consist of the identifier, function kw, params and body
+const calculateArea = function(width, height) {....}
+Arrow function syntax is used to write functions with ES6 using special arrow notation
+const rectangleArea = (width, height) => {....} or const functionName = () => {}
