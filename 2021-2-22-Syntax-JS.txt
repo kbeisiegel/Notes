@@ -35,3 +35,6 @@ Function expressions consist of the identifier, function kw, params and body
 const calculateArea = function(width, height) {....}
 Arrow function syntax is used to write functions with ES6 using special arrow notation
 const rectangleArea = (width, height) => {....} or const functionName = () => {}
+
+In global scope, variables are declared outside of blocks
+In block scope, variables are declared within curly braces, aka local variables

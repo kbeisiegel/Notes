@@ -1,0 +1,79 @@
+Creating arrays can be done by saving an array to a variable
+let thisArray = ['a', 3, false]
+
+accessing elements within arrays
+thisArray[2] is false
+
+updating elements within arrays
+thisArray[0] = 'yo'; //yo replaces 'a' in array
+
+.length() returns the number of items in the array
+The .push() method will add items to an array
+.pop() removes the last item of an array
+.shift() removes the first element from an array and returns that removed element
+.unshift() adds one or more elements to the beginning of an array and returns the length of the array
+.slice() returns a preview of the array, starting with the element specified
+.indexOf() returns the first index at which an element can be found within the array
+.splice() changes the contents of an array (which element, how many removed, string/boolean/number to be added)
+
+These methods can be used within functions
+const nestedArray = [[1], [2, 3]];
+
+For loop
+for (let count = 5; count < 11; count++) {
+  console.log(count);
+}
+
+While loop
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+}
+
+For loops are used when we know the number of times the loop should run, while loops are used to execute an undetermined number of loops
+
+Object literals
+let spaceship = {};
+dot operator .length
+bracket notation [][]
+You can delete a property from an object with delete operator
+
+Objects are passed by reference
+let paintIt = obj => {};
+
+Looping through objects with for...in
+for (let crewMem in spaceship.crew) {console.log(`${crewMem}: ${spaceship.crew[crewMem].name}`);}
+
+The this keyword references the calling object which provides access to the calling object's properties
+
+DO NOT use arrow functions when using this keyword in a method, new keyword, or arguments binding
+Arrow functions also cannot have duplicate named params
+
+Getters are methods that get and return internal properties of an object
+get fullName() {..this..};
+
+Setter methods reassign values of existing properties within an object
+set age(newAge){..this._age};
+
+Destructured assignment const { residence } = vampire;
+
+Object.keys() returns an array of a given object's property names in the same order a loop does
+Object.entries() returns an array of a given object's string property [key, value] pairs in the same order a for...in loop does
+Object.assign() copies all numbered properties from one or more source objects to a target object
+
+Functions as data (Functions are first class objects)
+Variables can be used to hold reference to original function - without parentheses to assign the value of function itself, not value it returns when invoked
+
+Functions as parameters
+A higher-order function is a function that either accepts functions as parameters, returns a function or both
+Calling the functions that get passed in as parameters and invoked callback functions because they get called during execution of higher-order function
+
+Iterators
+.forEach() will execute the same code for each element of an array
+.map() takes an argument of a callback function and returns a new array
+.filter() returns an array of elements after filtering out certain elements from the original array
+.findIndex() returns the index of the first element that evaluates to true in the callback function
+.reduce(accumulator, currentValue) returns a single value after iterating through the elements of an array, thereby reducing the array
+.some() tests whether at least one element in the array passes the test by the provided function
+.every() tests whether all elements in the array pass the test by the provided function
